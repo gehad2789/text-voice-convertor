@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text convertor </title>
+    <link rel="icon" type="text/icon" href="https://img.icons8.com/?size=100&id=41037&format=png&color=000000">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body{
+            box-sizing: border-box;
+            background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+
+        }
+        .container{
+            text-align: center;
+            width: 100%;
+           min-height:  100vh;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           flex-direction: column;
+        }
+        .container h1{
+            color:white;
+            font-weight: 500;
+            margin-top: -50px;
+            font-size: 45px;
+            margin-bottom: 50px;
+            
+        }
+        .container span{
+            color: #f64f59;
+            font-size: 50px;
+
+        }
+        .container textarea{
+            width: 600px;
+            height: 250px;
+            color:white;
+            background-color: #403d48;
+            border: 0;
+            outline: 0;
+            padding: 20px;
+            font-size: 15px;
+            border-radius: 10px;
+            resize: none;
+            margin-bottom: 30px;
+
+        }
+        textarea::placeholder{
+            font-size: 16px;
+            color:white;
+
+        }
+        .cont{
+            display: flex;
+            align-items:center;
+            gap: 20px;
+            width: 600px;
+
+
+        }
+        .cont button{
+            font-size: 17px;
+            padding: 12px 31px;
+            background-color: #f64f59;
+            color:white;
+            border-radius: 30px;
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+            height: 50px;
+        }
+        button i{
+            padding-right: 10px;
+        }
+        .cont select{
+            background-color:#403d48;
+            color:white;
+            display: flex;
+            flex:1;
+            padding: 10px 20px;
+            height: 50px;
+            outline: 0;
+            border:0;
+            border-radius:30px;
+        }
+        /*responsive*/
+        @media (max-width: 730px) {
+          
+            .txtar , select{
+                width: 65% !important;
+            }
+            .cont{
+                width: auto !important;
+                flex-direction: column;
+            }
+            .cont button{
+                width: auto !important;
+                height: auto !important;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            text to voice <span>convertor</span>
+        </h1>
+        <textarea placeholder="write what you want to listen  here...." class="txtar"></textarea>
+
+
+
+            <div class="cont">
+                <select title="select" class="selec"></select>
+                <button><i class="fa fa-play"></i>Listen </button>
+            </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
